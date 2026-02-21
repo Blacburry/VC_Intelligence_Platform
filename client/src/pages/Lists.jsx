@@ -81,6 +81,14 @@ const Lists = () => {
   setNewListName("");
 };
 
+const deleteList = (listName) => {
+  const updated = { ...lists };
+  delete updated[listName];
+
+  localStorage.setItem("lists", JSON.stringify(updated));
+  setLists(updated);
+};
+
   return (
   <div>
     <h2 className="text-2xl font-semibold mb-6">
@@ -120,9 +128,18 @@ const Lists = () => {
           key={listName}
           className="bg-white rounded-xl shadow p-6 mb-6"
         >
-          <h3 className="text-lg font-semibold mb-4">
-            {listName} ({companies.length})
-          </h3>
+          <div className="flex justify-between items-center mb-4">
+  <h3 className="text-lg font-semibold">
+    {listName} ({companies.length})
+  </h3>
+
+  <button
+    onClick={() => deleteList(listName)}
+    className="px-3 py-1 bg-red-600 text-white rounded text-sm"
+  >
+    Delete List
+  </button>
+</div>
 
           <div className="flex gap-4 mb-4">
             <button

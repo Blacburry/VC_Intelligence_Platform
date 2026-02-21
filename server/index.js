@@ -29,7 +29,13 @@ const response = await axios.get(url, {
     "User-Agent": "Mozilla/5.0"
   }
 });
-    const websiteText = response.data.slice(0, 8000);
+    if (!response.data || response.data.length < 500) {
+  return res.status(400).json({
+    error: "Unable to extract meaningful content from this website. It may block automated scraping."
+  });
+}
+
+const websiteText = response.data.slice(0, 8000);
 
     const completion = await openai.chat.completions.create({
   model: "gpt-4o-mini",

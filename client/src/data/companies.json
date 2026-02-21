@@ -13,7 +13,7 @@
     "sector": "Climate",
     "stage": "Series A",
     "location": "Berlin",
-    "website": "https://tesla.com"
+    "website": "https://waaree.com"
   },
   {
     "id": "3",
@@ -30,5 +30,85 @@
     "stage": "Pre-Seed",
     "location": "New York",
     "website": "https://who.int"
+  },
+  {
+    "id": 5,
+    "name": "Plausible Analytics",
+    "sector": "SaaS",
+    "stage": "Bootstrapped",
+    "location": "Estonia",
+    "website": "https://plausible.io"
+  },
+  {
+    "id": 6,
+    "name": "Buffer",
+    "sector": "SaaS",
+    "stage": "Growth",
+    "location": "USA",
+    "website": "https://buffer.com"
+  },
+  {
+    "id": 7,
+    "name": "Ghost",
+    "sector": "Creator Tools",
+    "stage": "Growth",
+    "location": "Singapore",
+    "website": "https://ghost.org"
+  },
+  {
+    "id": 8,
+    "name": "Beehiiv",
+    "sector": "Creator Economy",
+    "stage": "Series A",
+    "location": "USA",
+    "website": "https://www.beehiiv.com"
+  },
+  {
+    "id": 9,
+    "name": "Cal.com",
+    "sector": "Productivity",
+    "stage": "Seed",
+    "location": "USA",
+    "website": "https://cal.com"
+  },
+  {
+    "id": 10,
+    "name": "Fathom Analytics",
+    "sector": "SaaS",
+    "stage": "Bootstrapped",
+    "location": "Canada",
+    "website": "https://usefathom.com"
+  },
+  {
+    "id": 11,
+    "name": "Railway",
+    "sector": "Developer Tools",
+    "stage": "Series A",
+    "location": "USA",
+    "website": "https://railway.app"
+  },
+  {
+    "id": 12,
+    "name": "Replit",
+    "sector": "Developer Tools",
+    "stage": "Growth",
+    "location": "USA",
+    "website": "https://replit.com"
+  },
+  {
+    "id": 13,
+    "name": "Scribe",
+    "sector": "Productivity",
+    "stage": "Series B",
+    "location": "USA",
+    "website": "https://scribehow.com"
+  },
+  {
+    "id": 14,
+    "name": "Descript",
+    "sector": "AI",
+    "stage": "Series C",
+    "location": "USA",
+    "website": "https://www.descript.com"
   }
 ]

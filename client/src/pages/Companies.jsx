@@ -21,7 +21,7 @@ const Companies = () => {
   setStage(params.get("stage") || "");
 }, [location.search]);
 
-  const pageSize = 3;
+  const pageSize = 6;
 
   const filtered = companiesData.filter((company) => {
     return (
@@ -98,6 +98,10 @@ setTimeout(() => {
           <option value="Climate">Climate</option>
           <option value="Fintech">Fintech</option>
           <option value="HealthTech">HealthTech</option>
+          <option value="SaaS">SaaS</option>
+<option value="Developer Tools">Developer Tools</option>
+<option value="Creator Economy">Creator Economy</option>
+<option value="Productivity">Productivity</option>
         </select>
 
         <select

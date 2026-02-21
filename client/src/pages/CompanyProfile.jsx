@@ -53,8 +53,12 @@ const [saveMessage, setSaveMessage] = useState("");
 
       setEnrichment(response.data);
     } catch (error) {
-      console.error(error);
-    }
+  console.error(error);
+  alert(
+    error.response?.data?.error ||
+    "Enrichment failed. This website may block scraping."
+  );
+}
     setLoading(false);
   };
 

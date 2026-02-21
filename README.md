@@ -1,3 +1,13 @@
+## 🔗 Live Demo
+
+Frontend:
+https://vc-intelligence-platform.vercel.app
+
+Backend:
+https://vc-intelligence-backend.onrender.com
+
+---
+
 # VC Intelligence Platform
 
 A lightweight venture capital intelligence tool for discovering, analyzing, and organizing early-stage startups.
@@ -56,7 +66,3 @@ Uses OpenAI GPT-4o-mini to extract:
 All output is structured JSON.
 
 ---
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the repository
