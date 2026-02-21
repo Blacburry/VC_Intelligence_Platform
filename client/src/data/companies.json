@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "ScaleForge AI",
+    "sector": "AI",
+    "stage": "Seed",
+    "location": "San Francisco",
+    "website": "https://example.com"
+  },
+  {
+    "id": "2",
+    "name": "GreenGrid Energy",
+    "sector": "Climate",
+    "stage": "Series A",
+    "location": "Berlin",
+    "website": "https://tesla.com"
+  },
+  {
+    "id": "3",
+    "name": "FinNova Labs",
+    "sector": "Fintech",
+    "stage": "Seed",
+    "location": "London",
+    "website": "https://stripe.com"
+  },
+  {
+    "id": "4",
+    "name": "HealthSync",
+    "sector": "HealthTech",
+    "stage": "Pre-Seed",
+    "location": "New York",
+    "website": "https://who.int"
+  }
+]
