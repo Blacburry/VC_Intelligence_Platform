@@ -23,6 +23,14 @@ const Companies = () => {
 
   const pageSize = 6;
 
+  const uniqueStages = [
+  ...new Set(companiesData.map((c) => c.stage))
+];
+
+const uniqueSectors = [
+  ...new Set(companiesData.map((c) => c.sector))
+];
+
   const filtered = companiesData.filter((company) => {
     return (
       company.name.toLowerCase().includes(search.toLowerCase()) &&
@@ -90,29 +98,32 @@ setTimeout(() => {
         />
 
         <select
-          className="px-4 py-2 border rounded-lg"
-          onChange={(e) => setSector(e.target.value)}
-        >
-          <option value="">All Sectors</option>
-          <option value="AI">AI</option>
-          <option value="Climate">Climate</option>
-          <option value="Fintech">Fintech</option>
-          <option value="HealthTech">HealthTech</option>
-          <option value="SaaS">SaaS</option>
-<option value="Developer Tools">Developer Tools</option>
-<option value="Creator Economy">Creator Economy</option>
-<option value="Productivity">Productivity</option>
-        </select>
+  value={sector}
+  onChange={(e) => setSector(e.target.value)}
+  className="px-4 py-2 border rounded-lg"
+>
+  <option value="">All Sectors</option>
+
+  {uniqueSectors.map((s) => (
+    <option key={s} value={s}>
+      {s}
+    </option>
+  ))}
+</select>
 
         <select
-          className="px-4 py-2 border rounded-lg"
-          onChange={(e) => setStage(e.target.value)}
-        >
-          <option value="">All Stages</option>
-          <option value="Pre-Seed">Pre-Seed</option>
-          <option value="Seed">Seed</option>
-          <option value="Series A">Series A</option>
-        </select>
+  value={stage}
+  onChange={(e) => setStage(e.target.value)}
+  className="px-4 py-2 border rounded-lg"
+>
+  <option value="">All Stages</option>
+
+  {uniqueStages.map((s) => (
+    <option key={s} value={s}>
+      {s}
+    </option>
+  ))}
+</select>
         <button
   onClick={handleSaveSearch}
   className="px-4 py-2 bg-purple-600 text-white rounded-lg"
