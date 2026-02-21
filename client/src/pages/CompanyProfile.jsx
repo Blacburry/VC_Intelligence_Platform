@@ -45,7 +45,7 @@ const [saveMessage, setSaveMessage] = useState("");
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/enrich",
+  `${import.meta.env.VITE_API_URL}/api/enrich`,
         {
           url: company.website,
         }
